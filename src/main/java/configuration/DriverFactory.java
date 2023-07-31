@@ -1,4 +1,4 @@
-package configuratio;
+package configuration;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
@@ -10,9 +10,12 @@ public class DriverFactory {
     public static WebDriver greateDriver(WEBDRIVERS webdrivers){
         WebDriver driver = null;
         switch (webdrivers){
-            case CHROMECLEAN -> driver=createCleanChrome();
-            case EDGEDRIVER -> driver=createEdge();
-            case BNIGARSIA -> driver=createBONY();
+            case CHROMECLEAN : driver=createCleanChrome();
+            break;
+            case EDGEDRIVER : driver=createEdge();
+            break;
+            case BNIGARSIA : driver=createBONY();
+            break;
         }
         return driver;
     }

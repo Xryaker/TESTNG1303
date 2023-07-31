@@ -1,4 +1,4 @@
-package utils;
+package util;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.logging.LogEntries;

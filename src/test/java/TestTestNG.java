@@ -1,4 +1,4 @@
-import configuratio.BaseClass;
+import configuration.BaseClass;
 import liseners.TestTestNGLisener;
 import org.testng.annotations.*;
 @Listeners(TestTestNGLisener.class)
@@ -39,4 +39,5 @@ public class TestTestNG extends BaseClass {
     public void afteR() {
         System.out.println("after Class");
     }
+
 }
